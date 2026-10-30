@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMS Opt-In — Call Notify by Call App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="site">
+  <div class="brand">Call Notify</div>
+  <div class="by">A service of Call App</div>
+  <nav><a href="./">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="sms-opt-in.html">SMS Opt-In</a></nav>
+</header>
+
+<h1>How emergency contacts opt in to Call Notify texts</h1>
+<p class="updated">Call Notify safety alerts, operated by Call App</p>
+
+<div class="callout">
+  <p><strong>Our number never texts anyone first.</strong> A person only receives messages from Call Notify after
+  they text the keyword <strong>YES</strong> with their personal 4-digit invite code to our number themselves.</p>
+</div>
+
+<h2>1. A Call Notify user invites someone they know</h2>
+<p>In the Call Notify app, the user adds a person as an emergency contact (name and mobile number). The app then opens
+the user's <strong>own</strong> messaging app with this personal invitation pre-filled, which the user sends from their
+own phone number. Call Notify's number sends nothing at this step.</p>
+
+<figure>
+  <img src="img/contacts.png" alt="The Contacts screen in the Call Notify app. An added contact shows Waiting for YES with the explanation: waiting for them to text YES 1907 to Call Notify, nothing is sent to them until they do. A Text invite button opens the user's own messaging app.">
+  <figcaption>The Contacts screen in the Call Notify app. "Text invite" opens the user's own messaging app.</figcaption>
+</figure>
+
+<div class="thread">
+  <div class="who">Sent from the user's personal phone to their friend</div>
+  <div class="msg out">Hi Sam, it's Jordan. I'd like you as my emergency contact on Call Notify. If I ever miss a safety check-in, you'd get a text and a call with my location. To agree, text YES 1907 to [CALL_NOTIFY_NUMBER].</div>
+</div>
+
+<h2>2. The contact opts in by texting the keyword</h2>
+<p>If they agree, the contact texts <strong>YES</strong> and their code to the Call Notify number. This is the opt-in.
+The code ties their consent to the specific person who invited them.</p>
+
+<div class="thread">
+  <div class="label right">Contact → Call Notify</div>
+  <div class="msg out">YES 1907</div>
+  <div class="label">Call Notify → Contact</div>
+  <div class="msg in">Call Notify: You're now an emergency contact for Jordan. We'll only text or call if they miss a safety check-in. Msg frequency varies. Msg & data rates may apply. Reply HELP for help, STOP to opt out.</div>
+</div>
+
+<h2>3. Help and opt-out</h2>
+<div class="thread">
+  <div class="label right">Contact → Call Notify</div>
+  <div class="msg out">HELP</div>
+  <div class="label">Call Notify → Contact</div>
+  <div class="msg in">Call Notify: safety alerts for people who added you as an emergency contact. Msg frequency varies. Msg & data rates may apply. Email alleniversonwastheoriginalai@gmail.com for help. Reply STOP to opt out.</div>
+  <div class="label right">Contact → Call Notify</div>
+  <div class="msg out">STOP</div>
+  <div class="label">Call Notify → Contact</div>
+  <div class="msg in">Call Notify: You've been unsubscribed and won't receive any more messages. Reply START to rejoin.</div>
+</div>
+
+<h2>4. Messages a contact may receive after opting in</h2>
+<p>Only if the person who invited them misses a safety check-in they scheduled:</p>
+<div class="thread">
+  <div class="label">Call Notify → Contact</div>
+  <div class="msg in">SAFETY ALERT from Call Notify: Jordan didn't answer 3 check-in calls ("Walking home").
+Last known location (4 minutes ago), near 120 Main St: https://maps.google.com/?q=40.71280,-74.00600
+Try calling them at (555) 234-5678.
+If you think they are in danger, call 911.</div>
+</div>
+<p>And when that person marks themselves safe:</p>
+<div class="thread">
+  <div class="label">Call Notify → Contact</div>
+  <div class="msg in">Update from Call Notify: Jordan has checked in and marked themselves safe. No action needed.</div>
+</div>
+
+<p>Message frequency varies. Message and data rates may apply. See our <a href="terms.html#sms">SMS Terms</a> and
+<a href="privacy.html">Privacy Policy</a>. We do not sell or share your SMS opt-in data or personal information
+with third parties for marketing purposes.</p>
+</main>
+</body>
+</html>
